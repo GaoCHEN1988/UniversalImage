@@ -46,7 +46,7 @@
                    OpenPaneLength="240">
             <SplitView.Pane>
                 <StackPanel Name="ModulePanel" Margin="0,40,0,0">
-                    
+
                 </StackPanel>
             </SplitView.Pane>
             <SplitView.Content>
@@ -60,51 +60,5 @@
             </SplitView.Content>
         </SplitView>
     </Grid>
-
-    <!--<ListView x:Name="MainTopList">
-            <ListView.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <ItemsStackPanel Orientation="Horizontal" ScrollViewer.HorizontalScrollMode="Enabled" ScrollViewer.VerticalScrollMode="Disabled"/>
-                </ItemsPanelTemplate>
-            </ListView.ItemsPanel>
-
-            <Button x:Name="LoadImageButton" Content="Load Image" VerticalAlignment="Top" Width="100" Click="LoadImageButton_Click"/>
-            <Button x:Name="ImageButton" Content="Image" VerticalAlignment="Top"  Width="100" />
-            <Button x:Name="FilterButton" Content="Filter" VerticalAlignment="Top"  Width="100" />
-            <Button x:Name="CalibrationBUtton" Content="Calibration" VerticalAlignment="Top"  Width="100"/>
-            
-        </ListView>
-        <SplitView Name="MainSplitView"
-                   Grid.Row="1"
-               IsPaneOpen="False"
-               DisplayMode="CompactOverlay">
-            <SplitView.Pane>
-                <ListBox SelectionMode ="Single"
-                     SelectionChanged="Menu_OnSelectionChanged">
-   
-                    <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Image" FontSize="20" Margin="20,0,0,0"/>
-                        </StackPanel>
-                    </ListBoxItem>
-                    <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Filter" FontSize="20"/>
-                        </StackPanel>
-                    </ListBoxItem>
-                    <ListBoxItem>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Calibration" FontSize="20"/>
-                        </StackPanel>
-                    </ListBoxItem>
-                </ListBox>
-            </SplitView.Pane>
-            <SplitView.Content>
-                <Grid>
-                    <Image x:Name="storedImage" HorizontalAlignment="Center" Margin="180,10,0,0" VerticalAlignment="Center" Stretch="Fill"/>
-                </Grid>
-            </SplitView.Content>
-        </SplitView>-->
-
 
 </Page>
