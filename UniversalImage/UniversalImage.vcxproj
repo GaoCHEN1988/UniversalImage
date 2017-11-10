@@ -102,10 +102,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(SolutionDir)Dependencies\OpenCV\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\OpenCV\lib;$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <ExcludePath>$(SolutionDir)Dependencies\OpenCV\bin;$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(SolutionDir)Dependencies\OpenCV\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Dependencies\OpenCV\lib;$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <ExcludePath>$(SolutionDir)Dependencies\OpenCV\bin;$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
@@ -139,6 +143,10 @@
     <Link>
       <AdditionalDependencies>opencv_world331d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>XCOPY "$(SolutionDir)\Dependencies\OpenCV\bin\opencv_ffmpeg331_64.dll" "$(TargetDir)AppX\" /D /K /Y
+XCOPY "$(SolutionDir)\Dependencies\OpenCV\bin\opencv_world331d.dll" "$(TargetDir)AppX\" /D /K /Y</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -149,6 +157,10 @@
       <AdditionalDependencies>opencv_world331.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(Solution)Dependencies\OpenCV\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>XCOPY "$(SolutionDir)\Dependencies\OpenCV\bin\opencv_ffmpeg331_64.dll" "$(TargetDir)AppX\" /D /K /Y
+XCOPY "$(SolutionDir)\Dependencies\OpenCV\bin\opencv_world331.dll" "$(TargetDir)AppX\" /D /K /Y</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Content\BaseGrid.h" />

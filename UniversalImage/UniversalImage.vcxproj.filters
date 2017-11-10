@@ -8,6 +8,9 @@
       <UniqueIdentifier>3f71ba71-15d6-4e29-9c85-18df4df2f301</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
     </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{a9dbfdda-fce5-4056-8530-9d12455ba88f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -16,27 +19,59 @@
     <ClCompile Include="App.xaml.cpp" />
     <ClCompile Include="MainPage.xaml.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="Content\BaseGrid.cpp" />
-    <ClCompile Include="Content\CannyGrid.cpp" />
-    <ClCompile Include="Content\CannyModel.cpp" />
-    <ClCompile Include="Content\OpenCVHelper.cpp" />
-    <ClCompile Include="Content\BaseModel.cpp" />
-    <ClCompile Include="Content\ModelManager.cpp" />
-    <ClCompile Include="Content\BlurModel.cpp" />
-    <ClCompile Include="Content\BlurGrid.cpp" />
+    <ClCompile Include="Content\BaseGrid.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\BaseModel.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\BlurGrid.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\BlurModel.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\CannyGrid.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\CannyModel.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\ModelManager.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\OpenCVHelper.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h" />
     <ClInclude Include="MainPage.xaml.h" />
-    <ClInclude Include="Content\BaseGrid.h" />
-    <ClInclude Include="Content\CannyGrid.h" />
-    <ClInclude Include="Content\CannyModel.h" />
-    <ClInclude Include="Content\OpenCVHelper.h" />
-    <ClInclude Include="Content\BaseModel.h" />
-    <ClInclude Include="Content\ModelManager.h" />
-    <ClInclude Include="Content\BlurModel.h" />
-    <ClInclude Include="Content\BlurGrid.h" />
+    <ClInclude Include="Content\BaseGrid.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\BaseModel.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\BlurGrid.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\BlurModel.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\CannyGrid.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\CannyModel.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\ModelManager.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\OpenCVHelper.h">
+      <Filter>Content</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
